@@ -4,7 +4,7 @@
  *
  * @package Catch Themes
  * @subpackage Catch Base
- * @since Catch Base 1.0 
+ * @since Catch Base 1.0
  */
 
 if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
@@ -20,19 +20,19 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
  * @since Catch Base 1.0
  */
 function catchbase_get_default_theme_options() {
-	
+
 	$default_theme_options = array(
 		//Site Title an Tagline
 		'logo'												=> get_template_directory_uri() . '/images/headers/logo.png',
 		'logo_alt_text' 									=> '',
 		'logo_disable'										=> 1,
 		'move_title_tagline'								=> 0,
-		
+
 		//Layout
 		'theme_layout' 										=> 'right-sidebar',
 		'content_layout'									=> 'excerpt-featured-image',
 		'single_post_image_layout'							=> 'disabled',
-		
+
 		//Header Image
 		'enable_featured_header_image'						=> 'disabled',
 		'featured_image_size'								=> 'full',
@@ -51,10 +51,10 @@ function catchbase_get_default_theme_options() {
 		//Excerpt Options
 		'excerpt_length'									=> '40',
 		'excerpt_more_text'									=> __( 'Read More ...', 'catchbase' ),
-		
+
 		//Homepage / Frontpage Settings
 		'front_page_category'								=> array(),
-		
+
 		//Pagination Options
 		'pagination_type'									=> 'default',
 
@@ -70,8 +70,8 @@ function catchbase_get_default_theme_options() {
 		'search_text'										=> __( 'Search...', 'catchbase' ),
 
 		//Basic Color Options
-		'color_scheme' 										=> 'light',	
-		
+		'color_scheme' 										=> 'light',
+
 		//Featured Content Options
 		'featured_content_option'							=> 'disabled',
 		'featured_content_layout'							=> 'layout-four',
@@ -94,7 +94,7 @@ function catchbase_get_default_theme_options() {
 
 		//disable logo
 		'logo_disable'										=> 'true',
-		
+
 		//Reset all settings
 		'reset_all_settings'								=> 0,
 	);
@@ -121,7 +121,7 @@ function catchbase_featured_slider_image_loader() {
 		'false' => array(
 			'value' 				=> 'false',
 			'label' 				=> __( 'False', 'catchbase' ),
-		),		
+		),
 	);
 
 	return apply_filters( 'catchbase_color_schemes', $color_scheme_options );
@@ -186,7 +186,7 @@ function catchbase_get_archive_content_layout() {
 		'excerpt-featured-image' => array(
 			'value' => 'excerpt-featured-image',
 			'label' => __( 'Show Excerpt', 'catchbase' ),
-		),		
+		),
 		'full-content' => array(
 			'value' => 'full-content',
 			'label' => __( 'Show Full Content (No Featured Image)', 'catchbase' ),
@@ -455,7 +455,7 @@ function catchbase_single_post_image_layout_options() {
 		'slider-image-size' => array(
 			'value' => 'slider-image-size',
 			'label' => __( 'Slider Image Size', 'catchbase' ),
-		),		
+		),
 		'disabled' => array(
 			'value' => 'disabled',
 			'label' => __( 'Disabled', 'catchbase' ),
@@ -471,32 +471,32 @@ function catchbase_single_post_image_layout_options() {
  * @since Catch Base 1.0
 */
 function catchbase_get_social_icons_list() {
-	$catchbase_social_icons_list =	array( 
-											__( 'Facebook', 'catchbase' ), 
-											__( 'Twitter', 'catchbase' ), 
+	$catchbase_social_icons_list =	array(
+											__( 'Facebook', 'catchbase' ),
+											__( 'Twitter', 'catchbase' ),
 											__( 'Googleplus', 'catchbase' ),
 											__( 'Email', 'catchbase' ),
-											__( 'Feed', 'catchbase' ),	
-											__( 'WordPress', 'catchbase' ), 
-											//__( 'GitHub', 'catchbase' ), 
-											//__( 'LinkedIn', 'catchbase' ), 
-											__( 'Pinterest', 'catchbase' ), 
-											//__( 'Flickr', 'catchbase' ), 
-											__( 'Vimeo', 'catchbase' ), 
-											__( 'YouTube', 'catchbase' ), 
-											__( 'Tumblr', 'catchbase' ), 
-											__( 'Instagram', 'catchbase' ), 
+											__( 'Feed', 'catchbase' ),
+											__( 'WordPress', 'catchbase' ),
+											//__( 'GitHub', 'catchbase' ),
+											//__( 'LinkedIn', 'catchbase' ),
+											__( 'Pinterest', 'catchbase' ),
+											//__( 'Flickr', 'catchbase' ),
+											__( 'Vimeo', 'catchbase' ),
+											__( 'YouTube', 'catchbase' ),
+											__( 'Tumblr', 'catchbase' ),
+											__( 'Instagram', 'catchbase' ),
 											//__( 'PollDaddy', 'catchbase' ),
-											//__( 'CodePen', 'catchbase' ), 
-											//__( 'Path', 'catchbase' ), 
-											//__( 'Dribbble', 'catchbase' ), 
-											//__( 'Skype', 'catchbase' ), 
-											//__( 'Digg', 'catchbase' ), 
-											//__( 'Reddit', 'catchbase' ), 
-											//__( 'StumbleUpon', 'catchbase' ), 
-											//__( 'Pocket', 'catchbase' ), 
+											//__( 'CodePen', 'catchbase' ),
+											//__( 'Path', 'catchbase' ),
+											//__( 'Dribbble', 'catchbase' ),
+											//__( 'Skype', 'catchbase' ),
+											//__( 'Digg', 'catchbase' ),
+											//__( 'Reddit', 'catchbase' ),
+											//__( 'StumbleUpon', 'catchbase' ),
+											//__( 'Pocket', 'catchbase' ),
 											//__( 'DropBox', 'catchbase' ),
-											//__( 'Foursquare', 'catchbase' ),											
+											//__( 'Foursquare', 'catchbase' ),
 											//__( 'Spotify', 'catchbase' ),
 											//__( 'Twitch', 'catchbase' ),
 										);
@@ -557,7 +557,7 @@ function catchbase_metabox_header_featured_image_options() {
 			'id'		=> 'catchbase-header-image',
 			'value' 	=> 'enable',
 			'label' 	=> __( 'Enable', 'catchbase' ),
-		),	
+		),
 		'disable' => array(
 			'id'		=> 'catchbase-header-image',
 			'value' 	=> 'disable',
@@ -579,7 +579,7 @@ function catchbase_metabox_featured_image_options() {
 			'id'		=> 'catchbase-featured-image',
 			'value' 	=> 'default',
 			'label' 	=> __( 'Default', 'catchbase' ),
-		),							   
+		),
 		'featured' => array(
 			'id'		=> 'catchbase-featured-image',
 			'value' 	=> 'featured',
@@ -615,7 +615,7 @@ function catchbase_get_content() {
 
 
 // this is the content at the top left
-	$catchbase_content['top_left'] 	= '<a href="http://www.webcolege.fr">Webcollège</a>';
+	$catchbase_content['top_left'] 	= '<a href="http://www.webcollege.fr">Webcollège</a>';
 // this is the content at the bottom right
 	// <img src="' . get_template_directory_uri() . '/images/login.jpg" class="wp-post-image" alt="se connecter" title="se connecter">
 	$catchbase_content['top_right']	= '&nbsp;<a class="genericon_parent genericon genericon-key" target="_self" href="https://cas.itslearning.com/cas-creteil/login?service=https://webcollege.itslearning.com/Index.aspx">se connecter</a>';
