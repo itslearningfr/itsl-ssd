@@ -618,7 +618,7 @@ function catchbase_get_content() {
 	$catchbase_content['top_left'] 	= '<a href="http://www.webcollege.fr">Webcollège</a>';
 // this is the content at the bottom right
 	// <img src="' . get_template_directory_uri() . '/images/login.jpg" class="wp-post-image" alt="se connecter" title="se connecter">
-	$catchbase_content['top_right']	= '&nbsp;<a class="genericon_parent genericon genericon-key" target="_self" href="https://cas.itslearning.com/cas-creteil/login?service=https://webcollege.itslearning.com/Index.aspx">se connecter</a>';
+	$catchbase_content['top_right']	= '&nbsp;<a class="genericon_parent genericon genericon-key" target="_self" href="https://cas.itslearning.com/cas-creteil/login?service=https://webcollege.itslearning.com/elogin/autologin.aspx">se connecter</a>';
 // this is the content at the bottom left
 	$catchbase_content['left'] 	= sprintf( _x( 'Copyright &copy; %1$s . All Rights Reserved.', '1: Year', 'catchbase' ), date( 'Y' ), '' );
 // this is the content at the bottom right
